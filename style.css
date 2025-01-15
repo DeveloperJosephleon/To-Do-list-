@@ -1,0 +1,149 @@
+/* Reset and Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* body {
+    background: linear-gradient(185deg, #3b3ee3, #045610);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+body {
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2); /* Light pastel gradient */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+
+/* Container Styling */
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* To-Do App Styling */
+.todo-app {
+    text-align: center;
+}
+
+.todo-app h2 {
+    font-size: 24px;
+    color: #002765;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-app h2 img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+/* Input and Button Row */
+.row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"], select {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Task List */
+ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 5px 0;
+    background: #f9f9f9;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+ul li:hover {
+    background: #f1f1f1;
+}
+
+ul li.checked {
+    text-decoration: line-through;
+    color: #888;
+}
+
+ul li .priority {
+    font-size: 12px;
+    padding: 3px 5px;
+    border-radius: 3px;
+    color: #fff;
+}
+
+ul li .Low {
+    background: #28a745;
+}
+
+ul li .Medium {
+    background: #ffc107;
+}
+
+ul li .High {
+    background: #dc3545;
+}
+
+/* Close Button */
+ul li span {
+    color: #dc3545;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 10px;
+    transition: color 0.3s;
+}
+
+ul li span:hover {
+    color: #ff6f61;
+}
+
+/* Search Box */
+#search-box {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
